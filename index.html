@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./home.css" />
+    <title>fantasyXclub</title>
+    <link rel="icon" href="./images/image4.png" type="image/x-icon" />
+    <!-- Scripts -->
+    <script
+      src="https://kit.fontawesome.com/e6eae71e18.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="first"></div>
+    <nav class="top_bar">
+      <div class="headings">
+        <img class="header_img" src="./images/image1.png" alt="" />
+      </div>
+      <div class="nav_links">
+        <div class="nav_link">
+          <button class="dropbtn" id="link1" onclick="myFunction()">
+            New Releases
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="nav_link">
+          <button class="dropbtn" id="link2" onclick="myFunction1()">
+            Men
+          </button>
+          <div class="dropdown-content1" id="myDropdown1">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="nav_link">
+          <button class="dropbtn" id="link3" onclick="myFunction2()">
+            Women
+          </button>
+          <div class="dropdown-content2" id="myDropdown2">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+
+        <div class="nav_link">
+          <button class="dropbtn" id="link4" onclick="myFunction3()">
+            Kids
+          </button>
+          <div class="dropdown-content3" id="myDropdown3">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+
+        <div class="nav_link">
+          <a class="link" id="link5" href="#">Sale</a>
+        </div>
+      </div>
+      <div class="login_links">
+        <div class="links">
+          <a
+            class="login_link"
+            id="link6"
+            onclick="document.getElementById('id01').style.display='block'"
+            target="blank"
+            >Login</a
+          >
+        </div>
+        <div class="links">
+          <a
+            class="login_link"
+            id="link7"
+            onclick="document.getElementById('id02,').style.display='block'"
+            >Get started<i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+    <div class="last"></div>
+    <!-- /Top Bar -->
+
+    <!-- Signin Form -->
+    <div id="id01" class="modal">
+      <form
+        class="modal-content"
+        onsubmit="login(document.querySelector('.username').value, document.querySelector('.password').value); return false"
+      >
+        <div class="container">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <div class="container_info">
+            <img class="signin_img" src="./images/img4.png" alt="" />
+            <p class="signin_heading">
+              Your account for fantasy appeal and kicks
+            </p>
+          </div>
+          <!-- <label for="email"><b>Email</b></label> -->
+          <input
+            type="text"
+            placeholder="Username"
+            style="font-size: 15px"
+            name="username"
+            class="username"
+            required
+          />
+
+          <!-- <label for="psw"><b>Password</b></label> -->
+          <input
+            type="password"
+            placeholder="Password"
+            style="font-size: 15px"
+            name="password"
+            class="password"
+            required
+          />
+
+          <label
+            style="
+              color: #8d8d8d;
+              font-size: 13px;
+              margin-right: 53%;
+              display: flex;
+              justify-content: space-evenly;
+            "
+          >
+            <input
+              type="checkbox"
+              checked="checked"
+              name="remember"
+              style="margin-bottom: 15px; margin-right: -6%"
+            />
+            Remember me
+          </label>
+
+          <p
+            style="
+              color: #8d8d8d;
+              font-size: 11.5px;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+            "
+          >
+            By logging in, you agree to Fantasy x Club's
+            <a href="#" style="color: #8d8d8d; text-decoration-color: #8d8d8d"
+              >Terms & Privacy</a
+            >.
+          </p>
+
+          <div class="clearfix">
+            <!-- type="button"
+            onclick="document.getElementById('id01').style.display='block'" -->
+            <button type="submit" class="signinbtn">Sign Up</button>
+            <p style="color: #8d8d8d; font-size: 13px">
+              Not a member?
+              <a
+                href="#"
+                style="
+                  color: black;
+                  text-decoration-color: black;
+                  font-size: 13px;
+                "
+                >Join</a
+              >.
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- /Signin Form -->
+
+    <!-- Signup Form -->
+    <div id="id02" class="signup_modal">
+      <form class="signup_modal-content">
+        <div class="signup_container">
+          <span
+            onclick="document.getElementById('id02').style.display='none'"
+            class="signup_close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <div class="signup_container_info">
+            <img class="signup_img" src="./images/img4.png" alt="" />
+            <p class="signup_heading">
+              Your account for fantasy appeal and kicks
+            </p>
+          </div>
+
+          <input
+            type="text"
+            placeholder="Full name"
+            style="font-size: 15px"
+            name="fullname"
+            required
+          />
+
+          <input
+            type="text"
+            placeholder="Username"
+            style="font-size: 15px"
+            name="username"
+            required
+          />
+
+          <input
+            type="password"
+            placeholder="Password"
+            style="font-size: 15px"
+            name="psw"
+            required
+          />
+
+          <input
+            type="text"
+            placeholder="Email address"
+            style="font-size: 15px"
+            name="email"
+            required
+          />
+
+          <label
+            style="
+              color: #8d8d8d;
+              font-size: 13px;
+              margin-right: 53%;
+              display: flex;
+              justify-content: space-evenly;
+            "
+          >
+            <input
+              type="checkbox"
+              checked="checked"
+              name="Signup"
+              style="margin-bottom: 15px; margin-right: -6%"
+            />
+            Sign up for emails to get updates from Nike on products, offers and
+            your Member benefits
+          </label>
+
+          <p
+            style="
+              color: #8d8d8d;
+              font-size: 11.5px;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+            "
+          >
+            By creating an account, you agree to Fantasy x Club's
+            <a href="#" style="color: #8d8d8d; text-decoration-color: #8d8d8d"
+              >Terms & Privacy</a
+            >.
+          </p>
+
+          <div class="signup_clearfix">
+            <!-- type="button"
+            onclick="document.getElementById('id01').style.display='block'" -->
+            <button type="submit" class="signupbtn">Sign Up</button>
+            <p style="color: #8d8d8d; font-size: 13px" class="cancelbtn">
+              Not a member?
+              <a
+                href="#"
+                style="
+                  color: black;
+                  text-decoration-color: black;
+                  font-size: 13px;
+                "
+                >Join</a
+              >.
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- /Signup Form -->
+
+    <div class="section1">
+      <div class="content1">
+        <div class="row1">
+          <img class="img1" src="./images/img11.webp" alt="" />
+          <img class="img2" src="./images/image6.png" alt="" />
+          <img class="img3" src="./images/img12.webp" alt="" />
+        </div>
+        <img class="img" src="./images/image6.png" alt="" />
+        <div class="row2">
+          <img class="img4" src="./images/img14.png" alt="" />
+          <img class="img5" src="./images/img15.png" alt="" />
+        </div>
+        <div class="row3">
+          <img class="img6" src="./images/img10.webp" alt="" />
+          <img class="img7" src="./images/img13.webp" alt="" />
+          <h1 class="label">
+            you control your own fantasy.<a
+              class="shop_link"
+              id="link8"
+              href="#"
+              >Shop</a
+            >
+          </h1>
+        </div>
+      </div>
+
+      <div class="content2"></div>
+    </div>
+    <script src="./home.js"></script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("id01");
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("id02");
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
