@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./products.css" />
+    <title>fantasyXclub</title>
+    <link rel="icon" href="./images/image4.png" type="image/x-icon" />
+    <!-- Scripts -->
+    <script
+      src="https://kit.fontawesome.com/e6eae71e18.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="first"></div>
+    <nav class="top_bar">
+      <div class="headings">
+        <img class="header_img" src="./images/image1.png" alt="" />
+      </div>
+      <div class="nav_links">
+        <div class="nav_link">
+          <a class="link" id="link5" href="#">New Releases</a>
+        </div>
+        <div class="nav_link">
+          <button class="dropbtn" id="link2" onclick="myFunction1()">
+            Sneakers
+          </button>
+          <div class="dropdown-content1" id="myDropdown1">
+            <div class="sneaker_info">
+              <div class="sneakers_col1">
+                <h1 class="sneaker_header">collections</h1>
+                <a onclick="openSneaker()" class="Sneaker" href="#">all sneakers</a>
+                <a class="Sneaker" href="#">men</a>
+                <a class="Sneaker" href="#">women</a>
+                <a class="Sneaker" href="#">grade school</a>
+              </div>
+              <div class="sneakers_col2">
+                <h1 class="sneaker_header">brands</h1>
+                <a class="sneaker1" href="#">nike</a>
+                <a class="sneaker1" href="#">air jordan</a>
+                <a class="sneaker1" href="#">adidas</a>
+                <a class="sneaker1" href="#">reebok</a>
+              </div>
+              <div class="sneakers_col3">
+                <h1 class="sneaker_header">featured</h1>
+                <div class="frames">
+                  <div class="frame1">
+                    <img class="sneaker_img" src="./images/products/img1.png" alt="">
+                    <a class="Sneaker" href="#">air max 90 QS</a>
+                  </div>
+                  <div class="frame2">
+                    <img class="sneaker_img" src="./images/products/img2.jpg" alt="">
+                    <a class="Sneaker" href="#">nike blazer</a>
+                  </div>
+                  <div class="frame3">
+                    <img class="sneaker_img" src="./images/products/img3.jpg" alt="">
+                    <a class="Sneaker" href="#">chuck 70</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav_link">
+          <button class="dropbtn" id="link3" onclick="myFunction2()">
+            Apparel
+          </button>
+          <div class="dropdown-content2" id="myDropdown2">
+            <div class="apparel_info">
+              <div class="apparels_col1">
+                <h1 class="apparel_header">collections</h1>
+                <a onclick="openApparel()" class="apparel">all apparel</a>
+                <a class="apparel" href="#">just dropped</a>
+                <a class="apparel" href="#">men</a>
+                <a class="apparel" href="#">women</a>
+                
+              </div>
+              <div class="apparels_col2">
+                <h1 class="apparel_header">mens</h1>
+                <a class="apparel1" href="#">t-shirts</a>
+                <a class="apparel1" href="#">hoodies</a>
+                <a class="apparel1" href="#">jackets</a>
+                <a class="apparel1" href="#">tracksuits</a>
+                <a class="apparel1" href="#">shorts</a>
+              </div>
+              <div class="apparels_col3">
+                <h1 class="apparel_header">womens</h1>
+                <a class="apparel1" href="#">t-shirts</a>
+                <a class="apparel1" href="#">hoodies</a>
+                <a class="apparel1" href="#">jackets</a>
+                <a class="apparel1" href="#">tracksuits</a>
+                <a class="apparel1" href="#">shorts</a>
+                <a class="apparel1" href="#">dresses</a>
+                <a class="apparel1" href="#">leggings</a>
+              </div>
+              <div class="apparels_col4">
+                <h1 class="apparel_header">featured</h1>
+                <div class="apparel_frames">
+                  <div class="apparel_frame1">
+                    <img class="apparel_img" src="./images/products/img4.png" alt="">
+                    <a class="apparel" href="#">NSW air mech tee</a>
+                  </div>
+                  <div class="apparel_frame2">
+                    <img class="apparel_img" src="./images/products/img5.png" alt="">
+                    <a class="apparel" href="#">NSW icon GX hoodie</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="nav_link">
+          <button class="dropbtn" id="link4" onclick="myFunction3()">
+            Kids
+          </button>
+          <div class="dropdown-content3" id="myDropdown3">
+            <div class="kid_info">
+              <div class="kids_col1">
+                <h1 class="kid_header">collections</h1>
+                <a class="kid" href="#">all kids</a>
+                <a class="kid" href="#">all kids sneakers</a>
+                <a class="kid" href="#">all kids apparel</a>
+                <a class="kid" href="#">infant sneakers</a>
+                <a class="kid" href="#">toddler sneakers</a>
+                <a class="kid" href="#">pre-school sneakers</a>
+              </div>
+              <div class="kids_col2">
+                <h1 class="kid_header">mens</h1>
+                <a class="kid1" href="#">nike</a>
+                <a class="kid1" href="#">air jordan</a>
+                <a class="kid1" href="#">adidas</a>
+                <a class="kid1" href="#">reebok</a>
+                <a class="kid1" href="#">crocs</a>
+              </div>
+              <div class="kids_col3">
+                <h1 class="kid_header">apparel</h1>
+                <a class="kid1" href="#">t-shirts</a>
+                <a class="kid1" href="#">hoodies</a>
+                <a class="kid1" href="#">jackets</a>
+                <a class="kid1" href="#">tracksuits</a>
+                <a class="kid1" href="#">shorts</a>
+                <a class="kid1" href="#">dresses</a>
+                <a class="kid1" href="#">leggings</a>
+              </div>
+              <div class="kids_col4">
+                <h1 class="kid_header">featured</h1>
+                <div class="kid_frames">
+                  <div class="kid_frame1">
+                    <img class="kid_img" src="./images/products/img6.jpg" alt="">
+                    <a class="kid" href="#">air force 1 QS(TD)</a>
+                  </div>
+                  <div class="kid_frame2">
+                    <img class="kid_img" src="./images/products/img7.png" alt="">
+                    <a class="kid" href="#">crocs x paw patrol</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        
+        <div class="nav_link">
+          <button class="dropbtn" id="link1" onclick="myFunction()">
+            Accessories
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <div class="accessory_info">
+              <div class="accessories_col1">
+                <h1 class="accessory_header">collections</h1>
+                <a onclick="openAccessories()" class="accessory" href="#">all accessories</a>
+                <a class="accessory" href="#">just dropped</a>
+              </div>
+              <div class="accessories_col2">
+                <h1 class="accessory_header">types</h1>
+                <a class="accessory1" href="#">headwear</a>
+                <a class="accessory1" href="#">socks</a>
+                <a class="accessory1" href="#">bags</a>
+                <a class="accessory1" href="#">sneaker care</a>
+              </div>
+              <div class="accessories_col3">
+                <h1 class="accessory_header">featured</h1>
+                <div class="accessory_frames">
+                  <div class="accessory_frame1">
+                    <img class="accessory_img" src="./images/products/img8.png" alt="">
+                    <a class="accessory" href="#">the north face headwear</a>
+                  </div>
+                  <div class="accessory_frame2">
+                    <img class="accessory_img" src="./images/products/img9.png" alt="">
+                    <a class="accessory" href="#">nike NSW crossbody</a>
+                  </div>
+                  <div class="accessory_frame3">
+                    <img class="accessory_img" src="./images/products/img10.png" alt="">
+                    <a class="accessory" href="#">nike NSW everyday crew</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social_links">
+        <form class="search_links" action="/action_page.php">
+          <i id="link6" class="fas fa-search"></i>
+          <input
+            class="search_input"
+            type="text"
+            placeholder="Search.."
+            name="search"
+          />
+        </form>
+        <div class="link">
+          <a class="cart_link"
+            ><i id="link7" class="fas fa-shopping-basket"></i
+          ></a>
+        </div>
+        <div class="link">
+          <a id="profile_link"
+            ><i onclick="openNav()" id="link8" class="far fa-user-circle"></i
+          ></a>
+          <a id="profile_link2">
+            <i onclick="closeNav()" id="link9" class="far fa-user-circle"></i
+              >
+          </a>
+                <!-- Profile Account -->
+          <div id="navbar" class="sidenav">
+            <div class="top">
+              <i id="profile_icon" class="far fa-user-circle"></i>
+              <h2 class="profile_heading">your profile details</h2>
+            </div>
+            <div class="bottom">
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="last"></div>
+    <!-- /Top Bar -->
+
+    <div class="section1">
+      <!-- Section1 -->
+      <div  id="shoes" class="content1">
+        <div class="side_bar">
+          <div class="sneaker_type">
+            <h2 class="sneaker_heading">all sneakers</h2>
+            <ul class="sneakers">
+              <li class="sneaker">lifestyle</li>
+              <li class="sneaker">running</li>
+              <li class="sneaker">basketball</li>
+              <li class="sneaker">football</li>
+              <li class="sneaker">skateboard</li>
+              <li class="sneaker">athletics</li>
+            </ul>
+          </div>
+          <div class="gender_type">
+            <h2 class="gender_heading">gender</h2>
+            <ul class="genders">
+              <li class="gender">
+                <input
+                  class="texted"
+                  type="checkbox"
+                  name="men"
+                />men
+              </li>
+              <li class="gender">
+                <input
+                  class="texted"
+                  type="checkbox"
+                  name="men"
+                />women
+              </li>
+              <li class="gender">
+                <input
+                  class="texted"
+                  type="checkbox"
+                  name="men"
+                />unisex
+              </li>
+            </ul>
+          </div>
+          <div class="brand_type">
+            <h2 class="brand_heading">brand</h2>
+            <ul class="brands">
+              <li class="brand">nike</li>
+              <li class="brand">jordan</li>
+              <li class="brand">adidas</li>
+              <li class="brand">reebok</li>
+              <li class="brand">converse</li>
+              <li class="brand">new balance</li>
+            </ul>
+          </div>
+          <div class="price_type">
+            <h2 class="price_heading">shop by price</h2>
+            <ul class="prices">
+              <li class="price">under r 749.00</li>
+              <li class="price">r 749.00 - r 1299.00</li>
+              <li class="price">r 1299.00 - r 1799.00</li>
+              <li class="price">over r 1799.00</li>
+            </ul>
+          </div>
+        </div>
+        <!-- SNEAKERS -->
+        <div class="content1_items">
+          <div class="content1_row">
+
+          </div>
+ 
+          <div class="content1_row2">
+            <div class="content1_frame">
+              <img class="img1" src="./images/products/img13.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">air jordan point lane</h1>
+                  <h2 class="subtitle">men's shoe</h2>
+                </div>
+                <h1 class="price">r 2 599.00</h1>
+              </div>
+            </div>
+  
+            <div class="content1_frame2">
+              <img class="img1" src="./images/products/img14.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">air jordan MA2</h1>
+                  <h2 class="subtitle">men's shoe</h2>
+                </div>
+                <h1 class="price">r 2 299.00</h1>
+              </div>
+            </div>
+  
+            <div class="content1_frame3">
+              <img class="img1" src="./images/products/img15.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">adidas ZX 2K boost pure</h1>
+                  <h2 class="subtitle">men's shoe</h2>
+                </div>
+                <h1 class="price">r 2 499.00</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="content1_row3">
+            <div class="content1_frame">
+              <img class="img1" src="./images/products/img16.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">adidas streetball</h1>
+                  <h2 class="subtitle">men's shoe</h2>
+                </div>
+                <h1 class="price">r 1 899.00</h1>
+              </div>
+            </div>
+  
+            <div class="content1_frame2">
+              <img class="img1" src="./images/products/img17.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">reebok CL legacy</h1>
+                  <h2 class="subtitle">men's shoe</h2>
+                </div>
+                <h1 class="price">r 1 499.00</h1>
+              </div>
+            </div>
+  
+            <div class="content1_frame3">
+              <img class="img1" src="./images/img16.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">nike lahar low</h1>
+                  <h2 class="subtitle">women's shoe</h2>
+                </div>
+                <h1 class="price">r 2 399.00</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="content1_row4">
+            <div class="content1_frame">
+              <img class="img1" src="./images/products/img18.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">nike air max 2021</h1>
+                  <h2 class="subtitle">women's shoe</h2>
+                </div>
+                <h1 class="price">r 2 999.00</h1>
+              </div>
+            </div>
+  
+            <div class="content1_frame2">
+              <img class="img1" src="./images/products/img19.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">nike blazer mid '77</h1>
+                  <h2 class="subtitle">women's shoe</h2>
+                </div>
+                <h1 class="price">r 1 799.00</h1>
+              </div>
+            </div>
+  
+            <div class="content1_frame3">
+              <img class="img1" src="./images/products/img20.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">converse chuck '70</h1>
+                  <h2 class="subtitle">women's shoe</h2>
+                </div>
+                <h1 class="price">r 1 199.00</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="content1_row5">
+            <div class="content1_frame">
+              <img class="img1" src="./images/products/img21.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">converse chuck '70</h1>
+                  <h2 class="subtitle">women's shoe</h2>
+                </div>
+                <h1 class="price">r 1 199.00</h1>
+              </div>
+            </div>
+  
+            <div class="content1_frame2">
+              <img class="img1" src="./images/products/img22.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">new balance 237 lifestyle</h1>
+                  <h2 class="subtitle">women's shoe</h2>
+                </div>
+                <h1 class="price">r 1 599.00</h1>
+              </div>
+            </div>
+  
+            <div class="content1_frame3">
+              <img class="img1" src="./images/products/img23.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">adidas forum low</h1>
+                  <h2 class="subtitle">women's shoe</h2>
+                </div>
+                <h1 class="price">r 1 599.00</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="content1_row6">
+            <div class="content1_frame">
+              <img class="img1" src="./images/products/img24.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">adidas superstar</h1>
+                  <h2 class="subtitle">women's shoe</h2>
+                </div>
+                <h1 class="price">r 1 899.00</h1>
+              </div>
+            </div>
+  
+            <div class="content1_frame2">
+              <img class="img1" src="./images/products/img25.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">nike air max 96 II</h1>
+                  <h2 class="subtitle">women's shoe</h2>
+                </div>
+                <h1 class="price">r 3 199.00</h1>
+              </div>
+            </div>
+  
+            <div class="content1_frame3">
+              <img class="img1" src="./images/products/img26.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">nike air max 95</h1>
+                  <h2 class="subtitle">women's shoe</h2>
+                </div>
+                <h1 class="price">r 3 199.00</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="content1_row7">
+            <div class="content1_frame">
+              <img class="img1" src="./images/products/img27.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">nike air max 95</h1>
+                  <h2 class="subtitle">men's shoe</h2>
+                </div>
+                <h1 class="price">r 3 099.00</h1>
+              </div>
+            </div>
+  
+            <div class="content1_frame2">
+              <img class="img1" src="./images/products/img28.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">nike blazer mid '77</h1>
+                  <h2 class="subtitle">men's shoe</h2>
+                </div>
+                <h1 class="price">r 1 999.00</h1>
+              </div>
+            </div>
+  
+            <div class="content1_frame3">
+              <img class="img1" src="./images/products/img29.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">new balance running course</h1>
+                  <h2 class="subtitle">men's shoe</h2>
+                </div>
+                <h1 class="price">r 2 199.00</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /SNEAKERS -->
+      </div>
+
+      <!-- Section2 -->
+      <div id="apparel" class="content1">
+        <div class="side_bar">
+          <div class="sneaker_type">
+            <h2 class="sneaker_heading">all apparel</h2>
+            <ul class="sneakers">
+              <li class="sneaker">t-shirts</li>
+              <li class="sneaker">hoodies & sweatshirts</li>
+              <li class="sneaker">jackets</li>
+              <li class="sneaker">trousers & tights</li>
+              <li class="sneaker">tracksuits</li>
+              <li class="sneaker">dresses & shirts</li>
+              <li class="sneaker">shorts</li>
+            </ul>
+          </div>
+          <div class="gender_type">
+            <h2 class="gender_heading">gender</h2>
+            <ul class="genders">
+              <li class="gender">
+                <input
+                  class="texted"
+                  type="checkbox"
+                  name="men"
+                />men
+              </li>
+              <li class="gender">
+                <input
+                  class="texted"
+                  type="checkbox"
+                  name="men"
+                />women
+              </li>
+            </ul>
+          </div>
+          <div class="brand_type">
+            <h2 class="brand_heading">brand</h2>
+            <ul class="brands">
+              <li class="brand">nike</li>
+              <li class="brand">jordan</li>
+              <li class="brand">north face</li>
+              <li class="brand">reebok</li>
+              <li class="brand">converse</li>
+            </ul>
+          </div>
+          <div class="price_type">
+            <h2 class="price_heading">shop by price</h2>
+            <ul class="prices">
+              <li class="price">under r 749.00</li>
+              <li class="price">r 749.00 - r 1299.00</li>
+              <li class="price">r 1299.00 - r 1799.00</li>
+              <li class="price">over r 1799.00</li>
+            </ul>
+          </div>
+        </div>
+        <!-- APPAREL -->
+        <div class="content2_items">
+          <div class="content1_row">
+            <div class="content1_frame">
+              <img class="img1" src="./images/products/img30.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">NSW worldwide t-shirt</h1>
+                  <h2 class="subtitle">men's t-shirt</h2>
+                </div>
+                <h1 class="price">r 429.00</h1>
+              </div>
+            </div>
+            <!-- APPAREL ROW -->
+            <div class="content1_frame2">
+              <img class="img1" src="./images/products/img31.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">NSW photo t-shirt</h1>
+                  <h2 class="subtitle">men's t-shirt</h2>
+                </div>
+                <h1 class="price">r 429.00</h1>
+              </div>
+            </div>
+            <!-- APPAREL ROW -->
+            <div class="content1_frame3">
+              <img class="img1" src="./images/products/img32.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">nike air t-shirt</h1>
+                  <h2 class="subtitle">men's t-shirt</h2>
+                </div>
+                <h1 class="price">r 429.00</h1>
+              </div>
+            </div>
+          </div>
+          <!-- APPAREL ROW -->
+          <div class="content1_row2">
+            <div class="content1_frame">
+              <img class="img1" src="./images/products/img33.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">jumpman embroidered t-shirt</h1>
+                  <h2 class="subtitle">men's t-shirt</h2>
+                </div>
+                <h1 class="price">r 499.00</h1>
+              </div>
+            </div>
+            <!-- APPAREL ROW -->
+            <div class="content1_frame2">
+              <img class="img1" src="./images/products/img34.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">jordan jumpman flight t-shirt</h1>
+                  <h2 class="subtitle">men's t-shirt</h2>
+                </div>
+                <h1 class="price">r 519.00</h1>
+              </div>
+            </div>
+            <!-- APPAREL ROW -->
+            <div class="content1_frame3">
+              <img class="img1" src="./images/products/img35.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">climb t-shirt</h1>
+                  <h2 class="subtitle">men's t-shirt</h2>
+                </div>
+                <h1 class="price">r 329.00</h1>
+              </div>
+            </div>
+          </div>
+          <!-- APPAREL ROW -->
+          <div class="content1_row3">
+            <div class="content1_frame">
+              <img class="img1" src="./images/products/img36.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">woodcut dome t-shirt</h1>
+                  <h2 class="subtitle">men's t-shirt</h2>
+                </div>
+                <h1 class="price">r 329.00</h1>
+              </div>
+            </div>
+            <!-- APPAREL ROW -->
+            <div class="content1_frame2">
+              <img class="img1" src="./images/products/img37.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">camping graphic t-shirt</h1>
+                  <h2 class="subtitle">men's t-shirt</h2>
+                </div>
+                <h1 class="price">r 499.00</h1>
+              </div>
+            </div>
+            <!-- APPAREL ROW -->
+            <div class="content1_frame3">
+              <img class="img1" src="./images/products/img38.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">camping graphic t-shirt</h1>
+                  <h2 class="subtitle">men's t-shirt</h2>
+                </div>
+                <h1 class="price">r 499.00</h1>
+              </div>
+            </div>
+          </div>
+          <!-- APPAREL ROW -->
+          <div class="content1_row4">
+            <div class="content1_frame">
+              <img class="img1" src="./images/products/img39.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">space jam lola bunny tee</h1>
+                  <h2 class="subtitle">women's t-shirt</h2>
+                </div>
+                <h1 class="price">r 599.00</h1>
+              </div>
+            </div>
+            <!-- APPAREL ROW -->
+            <div class="content1_frame2">
+              <img class="img1" src="./images/products/img40.png" alt="nike">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">NSW stripe long sleeve</h1>
+                  <h2 class="subtitle">women's top</h2>
+                </div>
+                <h1 class="price">r 769.00</h1>
+              </div>
+            </div>
+            <!-- APPAREL ROW -->
+            <div class="content1_frame3">
+              <img class="img1" src="./images/products/img41.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">never stop exploring t-shirt</h1>
+                  <h2 class="subtitle">women's t-shirt</h2>
+                </div>
+                <h1 class="price">r 299.00</h1>
+              </div>
+            </div>
+          </div>
+          <!-- APPAREL ROW -->
+          <div class="content1_row5">
+            <div class="content1_frame">
+              <img class="img1" src="./images/products/img42.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">air jordan sport DNA hoodie</h1>
+                  <h2 class="subtitle">men's hoodie</h2>
+                </div>
+                <h1 class="price">r 1 129.00</h1>
+              </div>
+            </div>
+            <!-- APPAREL ROW -->
+            <div class="content1_frame2">
+              <img class="img1" src="./images/products/img43.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">space jams court ready hoodie</h1>
+                  <h2 class="subtitle">men's hoodie</h2>
+                </div>
+                <h1 class="price">r 1 999.00</h1>
+              </div>
+            </div>
+            <!-- APPAREL ROW -->
+            <div class="content1_frame3">
+              <img class="img1" src="./images/products/img44.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">nike icon GX hoodie</h1>
+                  <h2 class="subtitle">women's hoodie</h2>
+                </div>
+                <h1 class="price">r 1 119.00</h1>
+              </div>
+            </div>
+          </div>
+          <!-- APPAREL ROW -->
+          <div class="content1_row6">
+            <div class="content1_frame">
+              <img class="img1" src="./images/img18.webp" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">NSW air max wooven jacket</h1>
+                  <h2 class="subtitle">men's jacket</h2>
+                </div>
+                <h1 class="price">r 2 049.00</h1>
+              </div>
+            </div>
+            <!-- APPAREL ROW -->
+            <div class="content1_frame2">
+              <img class="img1" src="./images/products/img45.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">resolve 2 jacket</h1>
+                  <h2 class="subtitle">men's jacket/h2>
+                </div>
+                <h1 class="price">r 2 199.00</h1>
+              </div>
+            </div>
+            <!-- APPAREL ROW -->
+            <div class="content1_frame3">
+              <img class="img1" src="./images/img20.webp" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">NSW AOP jacket</h1>
+                  <h2 class="subtitle">women's jacket</h2>
+                </div>
+                <h1 class="price">r 1 549.00</h1>
+              </div>
+            </div>
+          </div>
+          <!-- APPAREL ROW -->
+          <div class="content1_row7">
+            <div class="content1_frame">
+              <img class="img1" src="./images/products/img46.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">resolve 2 jacket</h1>
+                  <h2 class="subtitle">women's jacket</h2>
+                </div>
+                <h1 class="price">r 2 199.00</h1>
+              </div>
+            </div>
+            <!-- APPAREL ROW -->
+            <div class="content1_frame2">
+              <img class="img1" src="./images/img21.webp" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">NSW woven AOP jogger</h1>
+                  <h2 class="subtitle">women's jogger</h2>
+                </div>
+                <h1 class="price">r 1 399.00</h1>
+              </div>
+            </div>
+            <!-- APPAREL ROW -->
+            <div class="content1_frame3">
+              <img class="img1" src="./images/products/img47.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">NSW air legging</h1>
+                  <h2 class="subtitle">women's legging</h2>
+                </div>
+                <h1 class="price">r 549.00</h1>
+              </div>
+            </div>
+          </div>
+                    <!-- APPAREL ROW -->
+          <div class="content1_row7">
+            <div class="content1_frame">
+              <img class="img1" src="./images/products/img48.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">NSW essential woven sneaker trousers</h1>
+                  <h2 class="subtitle">men's trousers</h2>
+                </div>
+                <h1 class="price">r 1 399.00</h1>
+              </div>
+            </div>
+            <!-- APPAREL ROW -->
+            <div class="content1_frame2">
+              <img class="img1" src="./images/products/img49.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">woven cargo trousers</h1>
+                  <h2 class="subtitle">men's trousers</h2>
+                </div>
+                <h1 class="price">r 1 2099.00</h1>
+              </div>
+            </div>
+            <!-- APPAREL ROW -->
+            <div class="content1_frame3">
+              <img class="img1" src="./images/products/img50.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">NSW womens dress</h1>
+                  <h2 class="subtitle">women's dress</h2>
+                </div>
+                <h1 class="price">r 949.00</h1>
+              </div>
+            </div>
+          </div>
+                  <!-- APPAREL ROW -->
+          <div class="content1_row8">
+            <div class="content1_frame">
+              <img class="img1" src="./images/products/img51.png" alt="">
+              <div class="content1_info">
+                <div class="labels">
+                  <h1 class="title">space jam shorts</h1>
+                  <h2 class="subtitle">men's shorts</h2>
+                </div>
+                <h1 class="price">r 1 299.00</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /APPAREL -->
+      </div>
+
+      <!-- Section3 -->
+      <div id="accessories" class="content3">
+        <div class="content1">
+          <div class="side_bar">
+            <div class="sneaker_type">
+              <h2 class="sneaker_heading">all accessories</h2>
+              <ul class="sneakers">
+                <li class="sneaker">headwear</li>
+                <li class="sneaker">socks</li>
+                <li class="sneaker">bags</li>
+              </ul>
+            </div>
+            <div class="gender_type">
+              <h2 class="gender_heading">gender</h2>
+              <ul class="genders">
+                <li class="gender">
+                  <input
+                    class="texted"
+                    type="checkbox"
+                    name="men"
+                  />men
+                </li>
+                <li class="gender">
+                  <input
+                    class="texted"
+                    type="checkbox"
+                    name="men"
+                  />women
+                </li>
+              </ul>
+            </div>
+            <div class="brand_type">
+              <h2 class="brand_heading">brand</h2>
+              <ul class="brands">
+                <li class="brand">nike</li>
+                <li class="brand">air jordan</li>
+                <li class="brand">reebok</li>
+                <li class="brand">north face</li>
+              </ul>
+            </div>
+            <div class="price_type">
+              <h2 class="price_heading">shop by price</h2>
+              <ul class="prices">
+                <li class="price">under r 749.00</li>
+                <li class="price">r 749.00 - r 1299.00</li>
+                <li class="price">r 1299.00 - r 1799.00</li>
+                <li class="price">over r 1799.00</li>
+              </ul>
+            </div>
+          </div>
+          <!-- SNEAKERS -->
+          <div class="content3_items">
+            <div class="content1_row">
+              <div class="content1_frame">
+                <img class="img1" src="./images/products/img52.png" alt="">
+                <div class="content1_info">
+                  <div class="labels">
+                    <h1 class="title">DNA classic 99 cap</h1>
+                    <h2 class="subtitle">men's cap</h2>
+                  </div>
+                  <h1 class="price">r 469.00</h1>
+                </div>
+              </div>
+    
+              <div class="content1_frame2">
+                <img class="img1" src="./images/products/img53.png" alt="">
+                <div class="content1_info">
+                  <div class="labels">
+                    <h1 class="title">beanie</h1>
+                    <h2 class="subtitle">men's beanie</h2>
+                  </div>
+                  <h1 class="price">r 429.00</h1>
+                </div>
+              </div>
+    
+              <div class="content1_frame3">
+                <img class="img1" src="./images/products/img54.png" alt="">
+                <div class="content1_info">
+                  <div class="labels">
+                    <h1 class="title">marina camp hat</h1>
+                    <h2 class="subtitle">men's cap</h2>
+                  </div>
+                  <h1 class="price">r 489.00</h1>
+                </div>
+              </div>
+            </div>
+  
+            <div class="content1_row2">
+              <div class="content1_frame">
+                <img class="img1" src="./images/products/img55.png" alt="">
+                <div class="content1_info">
+                  <div class="labels">
+                    <h1 class="title">marina camp hat</h1>
+                    <h2 class="subtitle">women's cap</h2>
+                  </div>
+                  <h1 class="price">r 489.00</h1>
+                </div>
+              </div>
+    
+              <div class="content1_frame2">
+                <img class="img1" src="./images/products/img56.png" alt="">
+                <div class="content1_info">
+                  <div class="labels">
+                    <h1 class="title">EU street five panel</h1>
+                    <h2 class="subtitle">women's scap</h2>
+                  </div>
+                  <h1 class="price">r 399.00</h1>
+                </div>
+              </div>
+    
+              <div class="content1_frame3">
+                <img class="img1" src="./images/products/img57.png" alt="">
+                <div class="content1_info">
+                  <div class="labels">
+                    <h1 class="title">NSW essential crew sock [3pk]</h1>
+                    <h2 class="subtitle">men's socks</h2>
+                  </div>
+                  <h1 class="price">r 249.00</h1>
+                </div>
+              </div>
+            </div>
+  
+            <div class="content1_row3">
+              <div class="content1_frame">
+                <img class="img1" src="./images/products/img58.png" alt="">
+                <div class="content1_info">
+                  <div class="labels">
+                    <h1 class="title">NSW futura 365 crossbody</h1>
+                    <h2 class="subtitle">women's bag</h2>
+                  </div>
+                  <h1 class="price">r 349.00</h1>
+                </div>
+              </div>
+    
+              <div class="content1_frame2">
+                <img class="img1" src="./images/products/img59.png" alt="">
+                <div class="content1_info">
+                  <div class="labels">
+                    <h1 class="title">NSW futura 365 mini backpack</h1>
+                    <h2 class="subtitle">men's bag</h2>
+                  </div>
+                  <h1 class="price">r 419.00</h1>
+                </div>
+              </div>
+    
+              <div class="content1_frame3">
+                <img class="img1" src="./images/products/img60.png" alt="">
+                <div class="content1_info">
+                  <div class="labels">
+                    <h1 class="title">NSW futura 365 crossbody</h1>
+                    <h2 class="subtitle">women's bag</h2>
+                  </div>
+                  <h1 class="price">r 329.00</h1>
+                </div>
+              </div>
+            </div>
+  
+            <div class="content1_row4">
+              <div class="content1_frame">
+                <img class="img1" src="./images/products/img61.png" alt="">
+                <div class="content1_info">
+                  <div class="labels">
+                    <h1 class="title">stash backpack</h1>
+                    <h2 class="subtitle">men's bag</h2>
+                  </div>
+                  <h1 class="price">r 469.00</h1>
+                </div>
+              </div>
+    
+              <div class="content1_frame2">
+                <img class="img1" src="./images/products/img9.png" alt="">
+                <div class="content1_info">
+                  <div class="labels">
+                    <h1 class="title">sportswear essential crossbody</h1>
+                    <h2 class="subtitle">men's bag</h2>
+                  </div>
+                  <h1 class="price">r 369.00</h1>
+                </div>
+              </div>
+    
+              <div class="content1_frame3">
+                <img class="img1" src="./images/products/img62.png" alt="">
+                <div class="content1_info">
+                  <div class="labels">
+                    <h1 class="title">camping city bag</h1>
+                    <h2 class="subtitle">men's bag</h2>
+                  </div>
+                  <h1 class="price">r 329.00</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /SNEAKERS -->
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_info">
+        <div class="footer_slogan">
+          <h1 class="slogan">the fantasy be whatever you want.</h1>
+          <div class="footer_info">
+            <div class="part1">
+              <h2 class="info">find a store</h2>
+              <h2 class="info">sign up for email</h2>
+              <h2 class="info">become a member</h2>
+            </div>
+            <div class="part2">
+              <h2 class="info2">feedback</h2>
+              <h2 class="info2">get help</h2>
+              <h2 class="info2">about me</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_img">
+        <img class="img15" src="./images/img30.png" alt="" />
+      </div>
+      <div class="socials">
+        <hr class="hr" />
+      </div>
+    </footer>
+    <script src="./products.js"></script>
+  </body>
+</html>

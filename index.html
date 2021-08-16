@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./home.css" />
+    <title>Fantasy x Club</title>
+    <link rel="icon" href="./images/image4.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Scripts -->
+    <script
+      src="https://kit.fontawesome.com/e6eae71e18.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="first"></div>
+    <nav class="top_bar">
+      <div class="headings" >
+       <a href="./index.html"><img class="header_img" src="./images/image1.png" alt="" /></a>
+      </div>
+      <div class="nav_links">
+        <div class="nav_link">
+          <a class="link" id="link5" href="#">New Releases</a>
+        </div>
+        <div class="nav_link">
+          <button class="dropbtn" id="link2" onclick="myFunction1()">
+            Sneakers
+          </button>
+          <div class="dropdown-content1" id="myDropdown1">
+            <div class="sneaker_info">
+              <div class="sneakers_col1">
+                <h1 class="sneaker_header">collections</h1>
+                <a class="sneaker" href="#">all sneakers</a>
+                <a class="sneaker" href="#">men</a>
+                <a class="sneaker" href="#">women</a>
+                <a class="sneaker" href="#">grade school</a>
+              </div>
+              <div class="sneakers_col2">
+                <h1 class="sneaker_header">brands</h1>
+                <a class="sneaker1" href="#">nike</a>
+                <a class="sneaker1" href="#">air jordan</a>
+                <a class="sneaker1" href="#">adidas</a>
+                <a class="sneaker1" href="#">reebok</a>
+              </div>
+              <div class="sneakers_col3">
+                <h1 class="sneaker_header">featured</h1>
+                <div class="frames">
+                  <div class="frame1">
+                    <img class="sneaker_img" src="./images/products/img1.png" alt="">
+                    <a class="sneaker" href="#">air max 90 QS</a>
+                  </div>
+                  <div class="frame2">
+                    <img class="sneaker_img" src="./images/products/img2.jpg" alt="">
+                    <a class="sneaker" href="#">nike blazer</a>
+                  </div>
+                  <div class="frame3">
+                    <img class="sneaker_img" src="./images/products/img3.jpg" alt="">
+                    <a class="sneaker" href="#">chuck 70</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav_link">
+          <button class="dropbtn" id="link3" onclick="myFunction2()">
+            Apparel
+          </button>
+          <div class="dropdown-content2" id="myDropdown2">
+            <div class="apparel_info">
+              <div class="apparels_col1">
+                <h1 class="apparel_header">collections</h1>
+                <a class="apparel" href="#">all apparel</a>
+                <a class="apparel" href="#">just dropped</a>
+                <a class="apparel" href="#">men</a>
+                <a class="apparel" href="#">women</a>
+                
+              </div>
+              <div class="apparels_col2">
+                <h1 class="apparel_header">mens</h1>
+                <a class="apparel1" href="#">t-shirts</a>
+                <a class="apparel1" href="#">hoodies</a>
+                <a class="apparel1" href="#">jackets</a>
+                <a class="apparel1" href="#">tracksuits</a>
+                <a class="apparel1" href="#">shorts</a>
+              </div>
+              <div class="apparels_col3">
+                <h1 class="apparel_header">womens</h1>
+                <a class="apparel1" href="#">t-shirts</a>
+                <a class="apparel1" href="#">hoodies</a>
+                <a class="apparel1" href="#">jackets</a>
+                <a class="apparel1" href="#">tracksuits</a>
+                <a class="apparel1" href="#">shorts</a>
+                <a class="apparel1" href="#">dresses</a>
+                <a class="apparel1" href="#">leggings</a>
+              </div>
+              <div class="apparels_col4">
+                <h1 class="apparel_header">featured</h1>
+                <div class="apparel_frames">
+                  <div class="apparel_frame1">
+                    <img class="apparel_img" src="./images/products/img4.png" alt="">
+                    <a class="apparel" href="#">NSW air mech tee</a>
+                  </div>
+                  <div class="apparel_frame2">
+                    <img class="apparel_img" src="./images/products/img5.png" alt="">
+                    <a class="apparel" href="#">NSW icon GX hoodie</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="nav_link">
+          <button class="dropbtn" id="link4" onclick="myFunction3()">
+            Kids
+          </button>
+          <div class="dropdown-content3" id="myDropdown3">
+            <div class="kid_info">
+              <div class="kids_col1">
+                <h1 class="kid_header">collections</h1>
+                <a class="kid" href="#">all kids</a>
+                <a class="kid" href="#">all kids sneakers</a>
+                <a class="kid" href="#">all kids apparel</a>
+                <a class="kid" href="#">infant sneakers</a>
+                <a class="kid" href="#">toddler sneakers</a>
+                <a class="kid" href="#">pre-school sneakers</a>
+              </div>
+              <div class="kids_col2">
+                <h1 class="kid_header">mens</h1>
+                <a class="kid1" href="#">nike</a>
+                <a class="kid1" href="#">air jordan</a>
+                <a class="kid1" href="#">adidas</a>
+                <a class="kid1" href="#">reebok</a>
+                <a class="kid1" href="#">crocs</a>
+              </div>
+              <div class="kids_col3">
+                <h1 class="kid_header">apparel</h1>
+                <a class="kid1" href="#">t-shirts</a>
+                <a class="kid1" href="#">hoodies</a>
+                <a class="kid1" href="#">jackets</a>
+                <a class="kid1" href="#">tracksuits</a>
+                <a class="kid1" href="#">shorts</a>
+                <a class="kid1" href="#">dresses</a>
+                <a class="kid1" href="#">leggings</a>
+              </div>
+              <div class="kids_col4">
+                <h1 class="kid_header">featured</h1>
+                <div class="kid_frames">
+                  <div class="kid_frame1">
+                    <img class="kid_img" src="./images/products/img6.jpg" alt="">
+                    <a class="kid" href="#">air force 1 QS(TD)</a>
+                  </div>
+                  <div class="kid_frame2">
+                    <img class="kid_img" src="./images/products/img7.png" alt="">
+                    <a class="kid" href="#">crocs x paw patrol</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        
+        <div class="nav_link">
+          <button class="dropbtn" id="link1" onclick="myFunction()">
+            Accessories
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <div class="accessory_info">
+              <div class="accessories_col1">
+                <h1 class="accessory_header">collections</h1>
+                <a class="accessory" href="#">all accessories</a>
+                <a class="accessory" href="#">just dropped</a>
+              </div>
+              <div class="accessories_col2">
+                <h1 class="accessory_header">types</h1>
+                <a class="accessory1" href="#">headwear</a>
+                <a class="accessory1" href="#">socks</a>
+                <a class="accessory1" href="#">bags</a>
+                <a class="accessory1" href="#">sneaker care</a>
+              </div>
+              <div class="accessories_col3">
+                <h1 class="accessory_header">featured</h1>
+                <div class="accessory_frames">
+                  <div class="accessory_frame1">
+                    <img class="accessory_img" src="./images/products/img8.png" alt="">
+                    <a class="accessory" href="#">the north face headwear</a>
+                  </div>
+                  <div class="accessory_frame2">
+                    <img class="accessory_img" src="./images/products/img9.png" alt="">
+                    <a class="accessory" href="#">nike NSW crossbody</a>
+                  </div>
+                  <div class="accessory_frame3">
+                    <img class="accessory_img" src="./images/products/img10.png" alt="">
+                    <a class="accessory" href="#">nike NSW everyday crew</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="login_links">
+        <div class="links">
+          <a
+            class="login_link"
+            id="link6"
+            onclick="document.getElementById('id01').style.display='block'"
+            target="blank"
+            >Login</a
+          >
+        </div>
+        <div class="links">
+          <a
+            class="login_link"
+            id="link7"
+            onclick="document.getElementById('id02').style.display='block'"
+            >Get started<i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+    <div class="last"></div>
+    <!-- /Top Bar -->
+
+    <!-- Signin Form -->
+    <div id="id01" class="modal">
+      <form
+        class="modal-content"
+        method="GET"
+        action="./index.html"
+        onsubmit="login(document.querySelector('.username').value, document.querySelector('.password').value); return false"
+      >
+        <div class="container">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <div class="container_info">
+            <img class="signin_img" src="./images/img4.png" alt="" />
+            <p class="signin_heading">
+              Your account for fantasy apparel and kicks
+            </p>
+          </div>
+          <!-- <label for="email"><b>Email</b></label> -->
+          <input
+            type="text"
+            placeholder="Username"
+            style="font-size: 15px"
+            name="username"
+            class="username"
+            required
+          />
+
+          <!-- <label for="psw"><b>Password</b></label> -->
+          <input
+            type="password"
+            placeholder="Password"
+            style="font-size: 15px"
+            name="password"
+            class="password"
+            required
+          />
+
+          <label
+            style="
+              color: #8d8d8d;
+              font-size: 13px;
+              margin-right: 53%;
+              display: flex;
+              justify-content: space-evenly;
+            "
+          >
+            <input
+              type="checkbox"
+              checked="checked"
+              name="remember"
+              style="margin-bottom: 15px; margin-right: -6%"
+            />
+            Remember me
+          </label>
+
+          <p
+            style="
+              color: #8d8d8d;
+              font-size: 11.5px;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+            "
+          >
+            By logging in, you agree to Fantasy x Club's
+            <a href="#" style="color: #8d8d8d; text-decoration-color: #8d8d8d"
+              >Terms & Privacy</a
+            >.
+          </p>
+
+          <div class="clearfix">
+            <!-- type="button"
+            onclick="document.getElementById('id01').style.display='block'" -->
+            <button type="submit" class="signinbtn">Sign in</button>
+            <p style="color: #8d8d8d; font-size: 13px">
+              Not a member?
+              <a
+                href="#"
+                onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='none'"
+                style="
+                  color: black;
+                  text-decoration-color: black;
+                  font-size: 13px;
+                "
+                >Join</a
+              >.
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- /Signin Form -->
+
+    <!-- Signup Form -->
+    <div id="id02" class="signup_modal">
+      <form class="signup_modal-content">
+        <div class="signup_container">
+          <span
+            onclick="document.getElementById('id02').style.display='none'"
+            class="signup_close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <div class="signup_container_info">
+            <img class="signup_img" src="./images/img4.png" alt="" />
+            <p class="signup_heading">
+              Your account for fantasy apparel and kicks
+            </p>
+          </div>
+
+          <input
+            type="text"
+            placeholder="Full name"
+            style="font-size: 15px"
+            name="fullname"
+            required
+          />
+
+          <input
+            type="text"
+            placeholder="Username"
+            style="font-size: 15px"
+            name="username"
+            required
+          />
+
+          <input
+            type="password"
+            placeholder="Password"
+            style="font-size: 15px"
+            name="psw"
+            required
+          />
+
+          <input
+            type="text"
+            placeholder="Email address"
+            style="font-size: 15px"
+            name="email"
+            required
+          />
+
+          <label
+            style="
+              color: #8d8d8d;
+              font-size: 13px;
+              text-align: center;
+              display: flex;
+              justify-content: space-evenly;
+              margin-left: 7%;
+              margin-bottom: 3%;
+            "
+          >
+            <input
+              type="checkbox"
+              checked="checked"
+              name="Signup"
+              style="margin-bottom: 15px"
+            />
+            Sign up for emails to get updates from Nike on products, offers and
+            your Member benefits
+          </label>
+
+          <p
+            style="
+              color: #8d8d8d;
+              font-size: 11.5px;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+            "
+          >
+            By creating an account, you agree to Fantasy x Club's
+            <a href="#" style="color: #8d8d8d; text-decoration-color: #8d8d8d"
+              >Terms & Privacy</a
+            >.
+          </p>
+
+          <div class="signup_clearfix">
+            <!-- type="button"
+            onclick="document.getElementById('id01').style.display='block'" -->
+            <button type="submit" class="signupbtn">Join us</button>
+            <p style="color: #8d8d8d; font-size: 13px" class="cancelbtn">
+              Already a member?
+              <a
+                href="#"
+                onclick="document.getElementById('id01').style.display='block'; document.getElementById('id02').style.display='none'"
+                style="
+                  color: black;
+                  text-decoration-color: black;
+                  font-size: 13px;
+                "
+                >Sign in</a
+              >.
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- /Signup Form -->
+
+    <div class="section1">
+      <!-- Section1 -->
+      <div class="content1">
+        <div class="row1">
+          <img class="img1" src="./images/img11.webp" alt="" />
+          <img class="img2" src="./images/image6.png" alt="" />
+          <img class="img3" src="./images/img12.webp" alt="" />
+        </div>
+        <img class="img" src="./images/image6.png" alt="" />
+        <div class="row2">
+          <img class="img4" src="./images/img14.png" alt="" />
+          <img class="img5" src="./images/img15.png" alt="" />
+        </div>
+        <div class="row3">
+          <img class="img6" src="./images/img10.webp" alt="" />
+          <img class="img7" src="./images/img13.webp" alt="" />
+          <h1 class="label">
+            you control your own fantasy.<a
+              class="shop_link"
+              id="link8"
+              href="./products.html"
+              >Shop</a
+            >
+          </h1>
+        </div>
+      </div>
+
+      <!-- Section2 -->
+      <h2 class="content2_heading">gear up</h2>
+      <div class="content2">
+        <div class="slideshow">
+          <div class="slide1" style="margin-right: 0.5%">
+            <img class="img8" src="./images/img16.png" alt="" />
+            <div class="product_info">
+              <div class="labels">
+                <h1 class="title">lahar low</h1>
+                <h2 class="subtitle">women's shoe</h2>
+              </div>
+              <h1 class="price">r 2 399.00</h1>
+            </div>
+          </div>
+          <div class="slide2" style="margin-right: 0.5%">
+            <img class="img9" src="./images/img17.png" alt="" />
+            <div class="product_info">
+              <div class="labels">
+                <h1 class="title">air force 1 '07 PRM</h1>
+                <h2 class="subtitle">men's shoe</h2>
+              </div>
+              <h1 class="price">r 2 299.00</h1>
+            </div>
+          </div>
+          <div class="slide3" style="width: 33%; margin-right: 0.5%">
+            <img class="img10" src="./images/img18.webp" alt="" />
+            <div class="product_info">
+              <div class="labels">
+                <h1 class="title">NSW Air Max Woven Jacket</h1>
+                <h2 class="subtitle">men's jacket</h2>
+              </div>
+              <h1 class="price">r 2 049.00</h1>
+            </div>
+          </div>
+          <div class="slide4" style="width: 33%; margin-right: 0.5%">
+            <img class="img11" src="./images/img19.webp" alt="" />
+            <div class="product_info">
+              <div class="labels">
+                <h1 class="title">NSW Air Max Woven Cargo</h1>
+                <h2 class="subtitle">men's trousers</h2>
+              </div>
+              <h1 class="price">r 1 399.00</h1>
+            </div>
+          </div>
+          <div class="slide5" style="width: 33%; margin-right: 0.5%">
+            <img class="img12" src="./images/img20.webp" alt="" />
+            <div class="product_info">
+              <div class="labels">
+                <h1 class="title">NSW AOP jacket</h1>
+                <h2 class="subtitle">women's jacket</h2>
+              </div>
+              <h1 class="price">r 1 549.00</h1>
+            </div>
+          </div>
+          <div class="slide6" style="width: 33%; margin-right: 0.5%">
+            <img class="img13" src="./images/img21.webp" alt="" />
+            <div class="product_info">
+              <div class="labels">
+                <h1 class="title">NSW Woven AOP Jogger</h1>
+                <h2 class="subtitle">women's trousers</h2>
+              </div>
+              <h1 class="price">r 1 399.00</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section3 -->
+      <h2 class="content3_heading">join us</h2>
+      <div class="content3">
+        <div class="images">
+          <img class="img14" src="./images/img28.webp" alt="" />
+          <h1 class="content_label">
+            be part of the club.<a
+              class="join_link"
+              id="link9"
+              onclick="document.getElementById('id02').style.display='block'"
+              >Join us</a
+            >
+          </h1>
+          <!-- <img class="img15" src="./images/img22.webp" alt="" /> -->
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_info">
+        <div class="footer_slogan">
+          <h1 class="slogan">the fantasy be whatever you want.</h1>
+          <div class="footer_info">
+            <div class="part1">
+              <h2 class="info">find a store</h2>
+              <h2 class="info">sign up for email</h2>
+              <h2 class="info">become a member</h2>
+            </div>
+            <div class="part2">
+              <h2 class="info">feedback</h2>
+              <h2 class="info">get help</h2>
+              <h2 class="info">about me</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_img">
+        <img class="img15" src="./images/img30.png" alt="" />
+      </div>
+      <div class="socials">
+        <hr class="hr" />
+      </div>
+    </footer>
+    <script src="./home.js"></script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("id01");
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("id02");
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
