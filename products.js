@@ -116,3 +116,38 @@ function closeNav() {
   document.getElementById("link9").style.display = "none";
   document.getElementById("navbar").style.whiteSpace = "nowrap";
 }
+
+
+function editProduct(e) {
+  let product_id = parseInt(e.id);
+  console.log(product_id);
+  let name = document.querySelector(".content1_row").value;
+  let image = document.querySelector(".imgUrl").src;
+  let category = document.querySelector(".productCategory").value;
+  let description = document.querySelector(".productDescription").value;
+  let price = document.querySelector(".productPrice").value;
+
+  console.log(name, category, description, price);
+
+  fetch(
+    `https://agile-tundra-03577.herokuapp.com/edit-product/${product_id}/`,
+    {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `jwt ${window.localStorage["jwt-token"]}`,
+      },
+      body: JSON.stringify({
+        product_name: name,
+        product_image: image,
+        product_category: category,
+        product_description: description,
+        product_price: price,
+      }),
+    }
+  )
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+    });
+}
